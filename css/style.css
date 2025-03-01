@@ -208,3 +208,66 @@ footer{
   margin: 10px auto;
 }
 
+@media (max-width: 1200px) {
+  .testimonios,
+  .planes-precios {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .sobre-nosotros,
+  .features,
+  .metodologia,
+  .testimonios,
+  .planes-precios {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .text-features,
+  .text-metodologia,
+  .img-features,
+  .img-metodologia {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .contacto input,
+  .contacto textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 20px;
+  }
+
+  .home {
+    height: 400px;
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .contacto input,
+  .contacto textarea {
+    width: 100%;
+  }
+}
+
